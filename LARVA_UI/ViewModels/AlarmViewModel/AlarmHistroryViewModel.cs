@@ -111,7 +111,7 @@ namespace LARVA_UI.ViewModels
                     DataTable alarmHistData = AlarmManager.Instance.GetAlarmHistory(start_date, end_date);
 
                     // DataTable 내림차순 정렬 ( 기준 : EVENTTIME Column )
-                    alarmHistData.DefaultView.Sort = "UPDATETIME DESC";
+                    //alarmHistData.DefaultView.Sort = "UPDATETIME DESC";
                     alarmHistData = alarmHistData.DefaultView.ToTable(true);
 
                     AlarmHistoryList.Clear();

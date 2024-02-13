@@ -212,7 +212,7 @@ namespace EPLE.Core.Manager
 
         public DataTable GetAlarmHistory(DateTime fromDate, DateTime toDate)
         {
-            string sql_SelectAlarmHist = @"SELECT * FROM sys_alarm_history WHERE UPDATETIME BETWEEN @FROM AND @TO";
+            string sql_SelectAlarmHist = @"SELECT * FROM sys_alarm_history WHERE UPDATETIME BETWEEN @FROM AND @TO ORDER BY UPDATETIME DESC";
             Dictionary<string, object> param = new Dictionary<string, object>();
             param.Add("@FROM", fromDate.ToString("yyyy-MM-dd HH:mm:ss"));
             param.Add("@TO", toDate.ToString("yyyy-MM-dd HH:mm:ss"));

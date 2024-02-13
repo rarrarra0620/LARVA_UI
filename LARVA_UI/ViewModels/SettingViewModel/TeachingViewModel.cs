@@ -31,6 +31,8 @@ namespace LARVA_UI.ViewModels
         }
 
         [GenerateProperty]
+        private bool isTransferHandStatus;
+        [GenerateProperty]
         private List<string> transferHandItems = new List<string>();
         [GenerateProperty]
         private List<string> locationTypeItems = new List<string>();
@@ -67,13 +69,14 @@ namespace LARVA_UI.ViewModels
             Initialize();
             UpdateLocationItems();
 
-
+            
         }
 
         private void Initialize()
         {
             bool result = false;
             double dVal;
+            int nVal;
 
             DataManager.Instance.DataAccess.DataChangedEvent += DataChanged;
 
@@ -96,6 +99,12 @@ namespace LARVA_UI.ViewModels
                 Actual_Z_Position = dVal;
             else
                 Actual_Z_Position = 0.0;
+
+            nVal = DataManager.Instance.GET_INT_DATA(IoNameHelper.iTrans_nHandLeft_FwdBwd, out result);
+            if (result && nVal == 1)
+                IsTransferHandStatus = true;
+            else
+                isTransferHandStatus = false;
 
             transferHandItems.Add("LEFT");
             transferHandItems.Add("RIGHT");
@@ -148,7 +157,17 @@ namespace LARVA_UI.ViewModels
             }
         }
 
+        [GenerateCommand]
+        private void TransferHandRightChecked(RoutedEventArgs args)
+        {
+            DataManager.Instance.SET_INT_DATA(IoNameHelper.oTrans_nHand_LeftRight, (int)eFwdBwd.BACKWARD);
+        }
 
+        [GenerateCommand]
+        private void TransferHandLeftChecked(RoutedEventArgs args)
+        {
+            DataManager.Instance.SET_INT_DATA(IoNameHelper.oTrans_nHand_LeftRight, (int)eFwdBwd.FORWARD);
+        }
 
         [GenerateCommand]
         private void SelectionChanged(RoutedEventArgs args)
