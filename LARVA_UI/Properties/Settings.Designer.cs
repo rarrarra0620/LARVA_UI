@@ -42,5 +42,6 @@ namespace LARVA_UI.Properties {
             set {
                 this["DiagPageConfigPath"] = value;
             }
-        }    }
+        }
+    }
 }

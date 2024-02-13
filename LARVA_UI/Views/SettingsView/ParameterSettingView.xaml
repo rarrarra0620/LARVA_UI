@@ -1,0 +1,169 @@
+﻿<UserControl x:Class="LARVA_UI.Views.ParameterSettingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:ViewModels="clr-namespace:LARVA_UI.ViewModels"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ParameterSettingViewModel}"
+             d:DesignHeight="1000" d:DesignWidth="1900" dxc:ThemeManager.ThemeName="Office2019White;Touch">
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="BoldFontLabelStyle" TargetType="dxlc:LayoutItemLabel">
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <dxlc:LayoutControl Orientation="Vertical" StretchContentVertically="False" Background="Transparent">
+
+            <dxlc:LayoutGroup>
+                <dxlc:LayoutGroup.GroupBoxStyle>
+                    <Style TargetType="dxlc:GroupBox">
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderBrush" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="Padding" Value="0" />
+                        <Setter Property="TitleVisibility" Value="Collapsed" />
+                    </Style>
+                </dxlc:LayoutGroup.GroupBoxStyle>
+                <TextBlock Name="textBlock2" Text="설정" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="26">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF31B5F0" Offset="0" />
+                            <GradientStop Color="#FF31B5F0" Offset="1" />
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Center" Name="textBlock1" Text="굼벵이 사육 파라미터 설정" VerticalAlignment="Center" FontSize="26" />
+            </dxlc:LayoutGroup>
+
+
+
+            <dxlc:LayoutGroup Header="톱밥 공급부 파라미터 설정"
+                              View="GroupBox"
+                              Orientation="Vertical"
+                              ItemLabelsAlignment="Local">
+                <dxlc:LayoutItem Label="톱밥 공급 무게 (Kg) :" IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding TobbabSupplyWeight}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding TobbabSupplyWeightSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="톱밥 공급 타임아웃 (초) : " IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding TobbabSupplyTimeout}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding TobbabSupplyTimeoutSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="수분 공급 시간 (초) : " IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding MistSupplyDuration}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding MistSupplyDurationSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+            </dxlc:LayoutGroup>
+
+            <dxlc:LayoutGroup Header="톱밥 배출부 파라미터 설정"
+                  View="GroupBox"
+                  Orientation="Vertical"
+                  ItemLabelsAlignment="Local">
+                <dxlc:LayoutItem Label="박스 타격 시간 (초) :" IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding FlipImpactDuration}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding FlipImpactDurationSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="박스 스윙 시간 (초) : " IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding FlipSwingDuration}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding FlipSwingDurationSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="톱밥 배출 시간 (초) : " IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:TextEdit MinWidth="150" EditValue="{Binding FlipOutConveyorDuration}" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding FlipOutConveyorDurationSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+            </dxlc:LayoutGroup>
+            <dxlc:LayoutGroup Header="박스 세정부 파라미터 설정"
+      View="GroupBox"
+      Orientation="Vertical"
+      ItemLabelsAlignment="Local">
+                <dxlc:LayoutItem Label="박스 세정 시간 (초) :" IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:SpinEdit MinWidth="150" EditValue="{Binding WashingDurationTime}" ShowEditorButtons="False"  MaxValue="255" MinValue="1" DisplayFormatString="D" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding WashingDurationTimeSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+               
+            </dxlc:LayoutGroup>
+
+            <dxlc:LayoutGroup Header="항온항습 파라미터 설정"
+View="GroupBox"
+Orientation="Vertical"
+ItemLabelsAlignment="Local">
+                <dxlc:LayoutItem Label="설정 온도 (도) :" IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:SpinEdit MinWidth="150" EditValue="{Binding HvacTargetTemperature}" ShowEditorButtons="False"  MaxValue="60" MinValue="0" DisplayFormatString="N2" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding HvacTargetTemperatureSetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+                <dxlc:LayoutItem Label="설정 습도 (%) :" IsRequired="True">
+                    <dxlc:FlowLayoutControl Orientation="Horizontal" ItemSpace="15" Padding="0">
+                        <dxe:SpinEdit MinWidth="150" EditValue="{Binding HvacTargetHumidity}" ShowEditorButtons="False"  MaxValue="100" MinValue="0" DisplayFormatString="N2" IsReadOnly="False" HorizontalContentAlignment="Center"/>
+                        <dxc:SimpleButton Content="설정" MinWidth="50" Margin="1 0 1 0">
+                            <dxmvvm:Interaction.Triggers>
+                                <dxmvvm:EventToCommand EventName="Click" Command="{Binding HvacTargetHumiditySetClickCommand}" PassEventArgsToCommand="False"/>
+                            </dxmvvm:Interaction.Triggers>
+                        </dxc:SimpleButton>
+                    </dxlc:FlowLayoutControl>
+                </dxlc:LayoutItem>
+            </dxlc:LayoutGroup>
+        </dxlc:LayoutControl>
+
+    </Grid>
+</UserControl>

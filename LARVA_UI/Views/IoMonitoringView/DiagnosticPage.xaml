@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="LARVA_UI.Views.DiagnosticPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             mc:Ignorable="d"
+             d:DesignHeight="1080" d:DesignWidth="1920"
+             Background="DarkGray" Loaded="Page_Loaded" Unloaded="Page_Unloaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="99*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <dxc:DXTabControl x:Name="MainContent" Grid.Row="0" SelectionChanged="MainContent_SelectionChanged" Grid.RowSpan="2">
+            <dxc:DXTabItem Header="X0000-X1068">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                        <WrapPanel x:Name="DiContent1" Orientation="Vertical" Margin="5,0,5,0"/>
+                    </StackPanel>
+                </Grid>
+            </dxc:DXTabItem>
+            <dxc:DXTabItem Header="X1069-X10C4">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                        <WrapPanel x:Name="DiContent2" Orientation="Vertical" Margin="5,0,5,0"/>
+                    </StackPanel>
+                </Grid>
+            </dxc:DXTabItem>
+            <dxc:DXTabItem Header="X10C5-X1120">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                        <WrapPanel x:Name="DiContent3" Orientation="Vertical" Margin="5,0,5,0"/>
+                    </StackPanel>
+                </Grid>
+            </dxc:DXTabItem>
+            <dxc:DXTabItem Header="X1121-X1133">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                        <WrapPanel x:Name="DiContent4" Orientation="Vertical" Margin="5,0,5,0"/>
+                    </StackPanel>
+                </Grid>
+            </dxc:DXTabItem>
+            <dxc:DXTabItem Header="Y1002-Y104F">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                        <WrapPanel x:Name="DoContent1" Orientation="Vertical" Margin="5,0,5,0"/>
+                    </StackPanel>
+                </Grid>
+            </dxc:DXTabItem>
+        </dxc:DXTabControl>
+    </Grid>
+</UserControl>

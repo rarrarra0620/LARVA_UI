@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{251A429E-3929-44A7-9152-5880A33F1625}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LARVA.Function</RootNamespace>
+    <AssemblyName>LARVA.Function</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFunction.cs" />
+    <Compile Include="F_AUTO_EJECT.cs" />
+    <Compile Include="F_AUTO_FEED_STOP.cs" />
+    <Compile Include="F_AUTO_JELLY_SUPPLY.cs" />
+    <Compile Include="F_AUTO_LOAD.cs" />
+    <Compile Include="F_AUTO_RICE_SUPPLY.cs" />
+    <Compile Include="F_AUTO_SHIPMENT.cs" />
+    <Compile Include="F_AUTO_TOBBAB_CHANGE.cs" />
+    <Compile Include="F_AUTO_TOBBAB_SUPPLY.cs" />
+    <Compile Include="F_AUTO_UNLOAD.cs" />
+    <Compile Include="F_AUTO_VISION.cs" />
+    <Compile Include="F_MANU_FLIP_HOME.cs" />
+    <Compile Include="F_MANU_Z_HOME.cs" />
+    <Compile Include="F_MANU_Y_HOME.cs" />
+    <Compile Include="F_MANU_X_HOME.cs" />
+    <Compile Include="F_SCHEDULE_JOB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EPLE.App\EPLE.App.csproj">
+      <Project>{aa771bc6-c2e9-425e-b4ae-baa052fe6b0c}</Project>
+      <Name>EPLE.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPLE.Core\EPLE.Core.csproj">
+      <Project>{96ba206e-be2d-4249-a066-9a62d51c626c}</Project>
+      <Name>EPLE.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPLE.IO\EPLE.IO.csproj">
+      <Project>{3c35ba06-a838-4873-9e71-9acaf052a1f5}</Project>
+      <Name>EPLE.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LARVA.Scheduler\LARVA.Scheduler.csproj">
+      <Project>{F768E8FF-7EC5-4CC2-A622-660995A9BDB8}</Project>
+      <Name>LARVA.Scheduler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,19 +1,21 @@
-﻿<dx:ThemedWindow 
+﻿<dxc:ThemedWindow 
     x:Class="LARVA_UI.MainWindow"
+    
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:b="http://schemas.devexpress.com/winfx/2008/behaviors"
-    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
     xmlns:Views="clr-namespace:LARVA_UI.Views"
     xmlns:ViewModels="clr-namespace:LARVA_UI.ViewModels"
-    WindowStyle="ToolWindow" 
-    Title="User Interface" Height="1080" Width="1920">
-    <dx:ThemedWindow.DataContext>
+    Title="User Interface" Height="1080" Width="1920" dxc:ThemeManager.ThemeName="Office2019White;Touch">
+    <dxc:ThemedWindow.DataContext>
         <ViewModels:MainWindowViewModel/>
-    </dx:ThemedWindow.DataContext>
+    </dxc:ThemedWindow.DataContext>
     <Grid>
-        <Frame x:Name="ContentFrame" Margin="0,0,0,100" Background="Gray" Source="Views\MainView.xaml" NavigationUIVisibility="Hidden"/>
+        <dxwui:NavigationFrame Source="MainView" AnimationType="SlideHorizontal"/>
+        <!--<Frame x:Name="ContentFrame" Margin="0,0,0,100" Background="Gray" Source="Views\MainView.xaml" NavigationUIVisibility="Hidden"/>
         <StackPanel Height="80" Margin="0,0,0,10" VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
             <dx:SimpleButton Background="#FFE9EBEC" Margin="10,0,10,0" BorderThickness="3" BorderBrush="#FF0D3A50"
                      CornerRadius="0" Height="80" Width="150" Content="MAIN" FontSize="18" 
@@ -26,5 +28,6 @@
             <Button x:Name="navi_settings" Content="SETTINGS" HorizontalAlignment="Left" Height="50" Margin="10,0,10,0" Width="100" Visibility="Hidden"/>
             <Button x:Name="navi_diagnostic" Content="DIAGNOSTIC" HorizontalAlignment="Left" Height="50" Margin="10,0,10,0" Width="100" Click="navi_diagnostic_Click" />
         </StackPanel>
+        -->
     </Grid>
-</dx:ThemedWindow>
+</dxc:ThemedWindow>

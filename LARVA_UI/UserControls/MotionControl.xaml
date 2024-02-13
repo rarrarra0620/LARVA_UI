@@ -1,0 +1,176 @@
+﻿<UserControl x:Class="LARVA_UI.UserControls.MotionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             mc:Ignorable="d"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             x:Name="ucMotionControl">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">
+            <TextBox Text="{Binding Path=ServoAxisName, ElementName=ucMotionControl}" MinWidth="180" MinHeight="25" FontWeight="Bold" TextAlignment="Center" IsReadOnly="True" />
+
+            <GroupBox Header="Servo Control" FontSize="12" Margin="0,0,0,0">
+                <StackPanel>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Servo Enable" VerticalContentAlignment="Center" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/DiagramIcons/Check.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" Click="ServoEnable_Click"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Servo Disable" VerticalContentAlignment="Center" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/DiagramIcons/del.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" Click="ServoDisable_Click"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Servo Reset" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Outlook Inspired/ResetView.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" Click="ServoReset_Click"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Jog Move" FontSize="12" Margin="0,0,0,0">
+                <StackPanel>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Jog ++" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Arrows/DoubleNext.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" PreviewMouseLeftButtonDown="JogPositiveFast_ButtonDown" PreviewMouseLeftButtonUp="JogPositiveFast_ButtonUp" TouchDown="JogPositiveFast_TouchDown" TouchUp="JogPositiveFast_TouchUp"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Jog --" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Arrows/DoublePrev.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" PreviewMouseLeftButtonDown="JogNegativeFast_ButtonDown" PreviewMouseLeftButtonUp="JogNegativeFast_ButtonUp" TouchDown="JogNegativeFast_TouchDown" TouchUp="JogNegativeFast_TouchUp"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Jog +" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Icon Builder/Actions_Next.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" PreviewMouseLeftButtonDown="JogPositiveSlow_ButtonDown" PreviewMouseLeftButtonUp="JogPositiveSlow_ButtonUp" TouchDown="JogPositiveSlow_TouchDown" TouchUp="JogPositiveSlow_TouchUp"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="Jog -" FontSize="12" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Icon Builder/Actions_Previous.svg'}" GlyphHeight="15" GlyphWidth="15" Margin="3" PreviewMouseLeftButtonDown="JogNegativeSlow_ButtonDown" PreviewMouseLeftButtonUp="JogNegativeSlow_ButtonUp" TouchDown="JogNegativeSlow_TouchDown" TouchUp="JogNegativeSlow_TouchUp"/>
+                </StackPanel>
+            </GroupBox>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left">
+
+            <GroupBox Header="Move" FontSize="12" Margin="5,0,0,0">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Set Position: " Grid.Column="0" Grid.Row="0" MinWidth="50" Margin="0,4,0,0" VerticalAlignment="Center" />
+                    <dxe:TextEdit x:Name="TextEditSetPosition" Grid.Column="1" Grid.Row="0" MinWidth="50" VerticalAlignment="Center" EditValue="{Binding Path=SetPosition, ElementName=ucMotionControl}" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+
+                    <TextBlock Text="Set Velocity:" Grid.Column="0" Grid.Row="1" MinWidth="50" Margin="0,4,0,0" VerticalAlignment="Center" />
+                    <dxe:TextEdit x:Name="TextEditSetVelocity" Grid.Column="1" Grid.Row="1" MinWidth="50" VerticalAlignment="Center" EditValue="{Binding Path=SetVelocity, ElementName=ucMotionControl}"  MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+
+                    <TextBlock Text="Actual Position: " Grid.Column="0" Grid.Row="2" Margin="0,4,0,0"  VerticalAlignment="Center" />
+                    <dxe:TextEdit x:Name="TextEditActualPosition" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"  EditValue="{Binding Path=ActualPosition, ElementName=ucMotionControl}" MaskType="Numeric" MaskUseAsDisplayFormat="True"  Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+
+                    <TextBlock Text="Actual Velocity: " Grid.Column="0" Grid.Row="3" Margin="0,4,0,0"  VerticalAlignment="Center" />
+                    <dxe:TextEdit x:Name="TextEditActualVelocity" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"  EditValue="{Binding Path=ActualVelocity, ElementName=ucMotionControl}" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="Taget" FontSize="12" Margin="5,0,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <!--<RowDefinition Height="*"/>-->
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Target Position: " Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                    <dxe:TextEdit x:Name="TextEditTargetPosition" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" PreviewMouseLeftButtonDown="TargetPosition_Click" EditValue="{Binding Path=TargetPosition, ElementName=ucMotionControl}" EditValueChanging="TargetPositionValueChanged_Event" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+                    <!--<Button Grid.Column="1" Grid.Row="0" Height="35" VerticalAlignment="Center" Click="TargetPosition_Click" Opacity="0.5" />-->
+
+                    <TextBlock Text="Target Velocity: " Grid.Column="0" Grid.Row="1" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                    <dxe:TextEdit x:Name="TextEditTargetVelocity" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" PreviewMouseLeftButtonDown="TargetVelocity_Click"  EditValue="{Binding Path=TargetVelocity, ElementName=ucMotionControl}" EditValueChanging="TargetVelocityValueChanged_Event" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" IsReadOnly="True"/>
+                    <!--Button Grid.Column="1" Grid.Row="1" Height="35" VerticalAlignment="Center" Click="TargetVelocity_Click" Opacity="0.5" /-->
+
+                    <dx:SimpleButton Grid.Column="0" Grid.Row="2" Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinWidth="110" MinHeight="15" Content="Move To" FontSize="12" Foreground="#ff505050" Margin="0,10,5,0" Click="ServoMoveTo_Click"/>
+                    <dx:SimpleButton Grid.Column="1" Grid.Row="2" Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinWidth="110" MinHeight="15" Content="Move By" FontSize="12" Foreground="#ff505050" Margin="5,10,0,0" Click="ServoMoveBy_Click"/>
+
+                    
+                    <!--<TextBlock Text="Target Acceleration: " Grid.Column="0" Grid.Row="2" Margin="0,4,0,0" VerticalAlignment="Center"/>
+                    <dxe:TextEdit x:Name="TextEditTargetAcceleration" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" EditValue="{Binding Path=TargetAcceleration, ElementName=ucMotionControl}" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000"/>
+
+                    <TextBlock Text="Target Deceleration: " Grid.Column="0" Grid.Row="3" Margin="0,4,0,0" VerticalAlignment="Center"/>
+                    <dxe:TextEdit x:Name="TextEditTargetDeceleration" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" EditValue="{Binding Path=TargetDeceleration, ElementName=ucMotionControl}" MaskType="Numeric" MaskUseAsDisplayFormat="True" Mask="#,##0.000;-#,##0.000" KeyDown="TextEditTargetDeceleration_KeyDown"/>-->
+                </Grid>
+            </GroupBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinWidth="110" MinHeight="15" Content="Servo Halt" FontSize="12" Foreground="#ff505050" Margin="0,0,5,0" Click="ServoHalt_Click"/>
+                <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinWidth="110" MinHeight="15" Content="Servo Home" Margin="5,0,0,0" Click="ServoHome_Click"/>
+            </StackPanel>
+
+            <!--Glyph="{dx:DXImage 'SvgImages/DiagramIcons/Check.svg'}" GlyphHeight="15" GlyphWidth="15" -->
+
+
+        </WrapPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+            <WrapPanel Orientation="Horizontal" Margin="1">
+                <Ellipse x:Name="StateIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+                <Label x:Name="StateLabel" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" Margin="1">
+                <Ellipse x:Name="ReadyIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+                <Label x:Name="ReadyLabel" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0"/>
+            </WrapPanel>
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="CalibratedIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="Calibrated" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="Calibrated"/>
+        </WrapPanel>-->
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="HasJobIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="HasJob" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="HasJob"/>
+        </WrapPanel>-->
+            <WrapPanel Orientation="Horizontal" Margin="1">
+                <Ellipse x:Name="NotMovingIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+                <Label x:Name="NotMoving" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0"/>
+            </WrapPanel>
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="MovingFWIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="MovingFW" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="MovingForward"/>
+        </WrapPanel>-->
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="MovingBWIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="MovingBW" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="MovingBackward"/>
+        </WrapPanel>-->
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="CoupledModeIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="CoupledMode" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="CoupledMode"/>
+        </WrapPanel>-->
+            <WrapPanel Orientation="Horizontal" Margin="1">
+                <Ellipse x:Name="InTargetPositionIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+                <Label x:Name="InTargetPosition" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="InTargetPosition"/>
+            </WrapPanel>
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="InTargetRangeIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="InTargetRange" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="InTargetRange"/>
+        </WrapPanel>-->
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="FeedFWIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="FeedFW" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="FeedForward"/>
+        </WrapPanel>-->
+            <!--<WrapPanel Orientation="Horizontal" Margin="1">
+            <Ellipse x:Name="FeedBWIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+            <Label x:Name="FeedBW" MinWidth="180" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="FeedBackward"/>
+        </WrapPanel>-->
+            <WrapPanel Orientation="Horizontal" Margin="1">
+                <Ellipse x:Name="ErrorIndicator" Fill="Gray" Margin="0" Stroke="Black" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25" Height="25"/>
+                <Label x:Name="Error" MinHeight="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,10,0" Content="Error"/>
+                <dxe:TextEdit MinWidth="120" MinHeight="25" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0" MaskType="Simple"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

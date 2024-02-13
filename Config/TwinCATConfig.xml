@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Plc AmsNetId="192.168.0.162.1.1" AmsPort="851" Log="./Config/DeviceLog.xml">
+  <PlcVar Name="GV_HMI.IF_HMI_IN" Type="BYTE" Size="98" Count="98" Tag="" Index="0"/>
+  <PlcVar Name="GV_HMI.IF_HMI_OUT" Type="BYTE" Size="400" Count="400" Tag="" Index="1"/>
+  <PlcVar Name="GV_HMI.ALARM_LIST" Type="BYTE" Size="100" Count="100" Tag="" Index="2"/>
+  <PlcVar Name="GV_SYSTEM.gar_rmLocation" Type="BYTE" Size="6000" Count="6000" Tag="" Index="3"/>
+  <AxsVar Count="ServoMotion_Parameters.MAX_AXES" PlcToHmi="ServoMotion_GVL.PlcToHmi" P2HSize="56" HmiToPlc="ServoMotion_GVL.HmiToPlc" H2PSize="64"/>
+  
+  <!--
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[2]" Caption="DO_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="241"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[3]" Caption="DO_3" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="242"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[4]" Caption="DO_4" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="243"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[5]" Caption="DO_5" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="244"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[1]" Caption="DI_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="245"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[2]" Caption="DI_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="246"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[3]" Caption="DI_3" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="247"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[4]" Caption="DI_4" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="248"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[5]" Caption="DI_5" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="249"/>
+  <AxsVar Count="ServoMotion_Parameters.MAX_AXES" PlcToHmi="ServoMotion_GVL.PlcToHmi" P2HSize="56" HmiToPlc="ServoMotion_GVL.HmiToPlc" H2PSize="64"/>
+  -->
+</Plc>

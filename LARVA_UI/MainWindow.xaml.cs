@@ -1,5 +1,4 @@
 ﻿using DevExpress.Xpf.Core;
-using LARVA_UI.TwinCATConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EPLE.IO;
+using EPLE.App;
+using LARVA.Scheduler;
+using LARVA.Scheduler.Model;
 
 namespace LARVA_UI
 {
@@ -24,27 +27,19 @@ namespace LARVA_UI
         public MainWindow()
         {
             InitializeComponent();
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
 
-            Config.SetupManager.Load_DiagConfig();
+            EPLE.App.Engine.Instance.ConfigFilePath = @"./config/Server.Config.ini";
+            EPLE.App.Engine.Instance.DbFilePath = @"./config/db_io.mdb";
+            EPLE.App.Engine.Instance.Inialize();
+            EPLE.App.Engine.Instance.Start();
 
-            switch (TwincatConnector.tcConnect())
-            {
-                case tcFunctionResult.TC_SUCCESS:
-                    if (TwincatConnector.tcCreateHandle() == tcFunctionResult.TC_SUCCESS)
-                    {
-                    }
-                    else
-                    {
-                    }
-                    break;
-                case tcFunctionResult.TC_FAIL_TO_LOAD_PLC_CONFIG:
-                    break;
-                case tcFunctionResult.TC_FAIL_TO_CONNECT_DEVICE:
-                    break;
-            }
-
+            LARVA.Scheduler.JobManager.Instance.Initialize(@"./config/db_io.mdb");
+            
+            //LARVA.Scheduler.JobManager.Instance.CreateNewJob("TOBBAB_CHANGE", 10, "SEAN", "HOME");
         }
 
+        /*
         private void navi_diagnostic_Click(object sender, RoutedEventArgs e)
         {
             ContentFrame.Navigate(new DiagnosticPage());
@@ -54,10 +49,10 @@ namespace LARVA_UI
         {
             ContentFrame.Navigate(new Views.MainView());
         }
+        */
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            TwincatConnector.tcDispose();
         }
     }
 }

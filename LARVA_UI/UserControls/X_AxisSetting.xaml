@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="LARVA_UI.UserControls.X_AxisSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             x:Name="ucX_AxisSetting">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Grid.Column="0" Margin="0,5,0,0" Orientation="Vertical">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Text="No" Grid.Row="0" Grid.Column="0" MinWidth="50" Margin="0" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Text="TargetPosition" Grid.Row="0" Grid.Column="1" MinWidth="250" Margin="0" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Text="TargetSpeed" Grid.Row="0" Grid.Column="3" MinWidth="250" Margin="0" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Text="Description" Grid.Row="0" Grid.Column="5" MinWidth="250" Margin="0" TextAlignment="Center" VerticalAlignment="Center"/>
+
+                <TextBox Text="{Binding Number}" Grid.Row="1" Grid.Column="0" TextAlignment="Center" IsReadOnly="True"/>
+                <TextBox Text="{Binding TargetPosition}" Grid.Row="1" Grid.Column="1"  MinWidth="150" TextAlignment="Center" IsReadOnly="True"/>
+                <TextBox Text="mm" Grid.Row="1" Grid.Column="2"  MinWidth="50" TextAlignment="Center"/>
+                <TextBox Text="{Binding TargetSpeed}" Grid.Row="1" Grid.Column="3" MinWidth="150" TextAlignment="Center" IsReadOnly="True"/>
+                <TextBox Text="mm/s" Grid.Row="1" Grid.Column="4" MinWidth="50" TextAlignment="Center"/>
+                <TextBox Text="{Binding Description}" Grid.Row="1" Grid.Column="5" TextAlignment="Center" IsReadOnly="True"/>
+            </Grid>
+        </WrapPanel>
+
+        <WrapPanel Grid.Column="1" Margin="30,5,0,0" Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Current Value-->
+                <TextBox Text="Current Position" Grid.Row="0" Grid.Column="0" MinWidth="150" Margin="0" VerticalAlignment="Center"/>
+                <dxe:TextEdit Grid.Row="0" Grid.Column="1" MinWidth="200" MaskType="Numeric" VerticalAlignment="Center" MaskUseAsDisplayFormat="True" Mask="#,##0.00;&lt;&lt;#,##0.00&gt;&gt;" IsReadOnly="True"/>
+
+                <TextBox Text="Jog Speed" Grid.Row="1" Grid.Column="0" MinWidth="150" Margin="0" VerticalAlignment="Center"/>
+                <dxe:TextEdit Grid.Row="1" Grid.Column="1" MinWidth="200" MaskType="Numeric" VerticalAlignment="Center" MaskUseAsDisplayFormat="True" Mask="#,##0.00;&lt;&lt;#,##0.00&gt;&gt;" IsReadOnly="True"/>
+            </Grid>
+
+            <!--Jog Move-->
+            <GroupBox Header="Jog Move" FontSize="12" Margin="0,10,0,0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="150" Content="JOG -" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Margin="0,0,5,0" Foreground="#ff505050"  Glyph="{dx:DXImage 'SvgImages/Icon Builder/Actions_Previous.svg'}" GlyphHeight="15" GlyphWidth="15" Click="JogPositive_Click"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="150" Content="JOG +" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Margin="5,0,0,0" Foreground="#ff505050" Glyph="{dx:DXImage 'SvgImages/Icon Builder/Actions_Next.svg'}" GlyphHeight="15" GlyphWidth="15" Click="JogNegative_Click"/>
+
+                </StackPanel>
+            </GroupBox>
+
+            <!--Jog Speed-->
+            <GroupBox Header="Jog Speed" FontSize="12" Margin="0,10,0,0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="LOW" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Margin="0,0,5,0" Foreground="#ff505050" Click="JogSpeedLow_Click"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="MID" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Margin="0,0,0,0" Foreground="#ff505050" Click="JogSpeedMid_Click"/>
+                    <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="100" Content="HIGH" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Margin="5,0,0,0" Foreground="#ff505050" Click="JogSpeedHigh_Click"/>
+                </StackPanel>
+            </GroupBox>
+
+            <!--Data Button-->
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,10,0,0">
+                <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="50" Content="READ" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" Margin="5" Foreground="#ff505050" Click="ReadData_Click"/>
+                <dx:SimpleButton Background="#FFE9EBEC" BorderThickness="2" BorderBrush="#FF0D3A50" CornerRadius="5" MinHeight="15" MinWidth="50" Content="SAVE" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" Margin="5" Foreground="#ff505050" Click="SaveData_Click"/>
+            </StackPanel>
+
+        </WrapPanel>
+
+    </Grid>
+</UserControl>

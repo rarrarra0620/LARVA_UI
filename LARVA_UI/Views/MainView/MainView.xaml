@@ -1,0 +1,68 @@
+﻿<UserControl 
+    x:Class="LARVA_UI.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+    xmlns:lc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+    xmlns:dxwuin="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/navigation"
+    xmlns:ViewModels="clr-namespace:LARVA_UI.ViewModels"
+    mc:Ignorable="d" d:DesignHeight="1000" d:DesignWidth="1920">
+    
+    <Grid>
+        <Grid.DataContext>
+            <ViewModels:MainViewModel/>
+        </Grid.DataContext>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <lc:TileLayoutControl Margin="5" Grid.Column="0">
+            <lc:Tile Size="ExtraLarge" dxwuin:Navigation.NavigateTo="AutoView">
+                <TextBlock Text="Auto" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </lc:Tile>
+            <lc:Tile Size="Large" dxwuin:Navigation.NavigateTo="ManualView">
+                <TextBlock Text="Manual" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </lc:Tile>
+            <lc:Tile Size="Large" dxwuin:Navigation.NavigateTo="SettingsView">
+                <TextBlock Text="Settings" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </lc:Tile>
+            <lc:Tile Size="Small" dxwuin:Navigation.NavigateTo="IoMonitoringView">
+                <TextBlock Text="I/O Monitor" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </lc:Tile>
+
+            <lc:Tile Size="Large" dxwuin:Navigation.NavigateTo="AlarmView">
+                <TextBlock Text="Alarm" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </lc:Tile>
+        </lc:TileLayoutControl>
+
+        <lc:TileLayoutControl Margin="5" Grid.Column="1">
+            <lc:Tile Size="Small">
+                <TextBlock Text="Buzzer OFF" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <dxmvvm:Interaction.Triggers>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding BuzzerOffTouchDownCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding BuzzerOffTouchUpCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonDown" Command="{Binding BuzzerOffCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonUp" Command="{Binding BuzzerOffCommand}" PassEventArgsToCommand="True"/>
+                </dxmvvm:Interaction.Triggers>
+            </lc:Tile>
+            <lc:Tile Size="Small">
+                <TextBlock Text="Alarm Reset" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <dxmvvm:Interaction.Triggers>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding AlarmResetTouchDownCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding AlarmResetTouchUpCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonUp" Command="{Binding AlarmResetCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonDown" Command="{Binding AlarmResetCommand}" PassEventArgsToCommand="True"/>
+                </dxmvvm:Interaction.Triggers>
+            </lc:Tile>
+            <lc:Tile Size="Small">
+                <TextBlock Text="{Binding ModeTxt}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <dxmvvm:Interaction.Triggers>
+                    <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonDown" Command="{Binding ModeChangeCommand}" PassEventArgsToCommand="True"/>
+                </dxmvvm:Interaction.Triggers>
+            </lc:Tile>
+        </lc:TileLayoutControl>
+    </Grid>
+</UserControl>

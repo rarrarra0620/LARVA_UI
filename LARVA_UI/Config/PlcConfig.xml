@@ -1,263 +1,271 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<Plc AmsNetId="5.98.94.203.1.1" AmsPort="851">
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI000_SHELF_SENSOR_A_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="0"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI001_SHELF_SENSOR_A_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="1"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI002_SHELF_SENSOR_A_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="2"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI003_SHELF_SENSOR_A_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="3"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI004_SHELF_SENSOR_A_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="4"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI005_SHELF_SENSOR_A_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="5"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI006_SHELF_SENSOR_A_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="6"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI007_SHELF_SENSOR_A_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="7"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI008_SHELF_SENSOR_A_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="8"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI009_SHELF_SENSOR_A_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="9"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI010_SHELF_SENSOR_A_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="10"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI011_SHELF_SENSOR_A_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="11"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI012_SHELF_SENSOR_A_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="12"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI013_SHELF_SENSOR_A_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="13"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI014_SHELF_SENSOR_A_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="14"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI015_SHELF_SENSOR_A_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="15"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI016_SHELF_SENSOR_A_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="16"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI017_SHELF_SENSOR_A_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="17"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI018_SHELF_SENSOR_A_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="18"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI019_SHELF_SENSOR_A_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="19"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI020_SHELF_SENSOR_A_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="20"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI021_SHELF_SENSOR_A_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="21"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI022_SHELF_SENSOR_A_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="22"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI023_SHELF_SENSOR_A_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="23"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI024_SHELF_SENSOR_A_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="24"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI025_SHELF_SENSOR_A_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="25"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI026_SHELF_SENSOR_A_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="26"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI027_SHELF_SENSOR_A_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="27"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI028_SHELF_SENSOR_A_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="28"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI029_SHELF_SENSOR_A_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="29"/>
+<Plc AmsNetId="5.131.249.183.1.1" AmsPort="851">
+  <PlcVar Name="GV_PIO.GV_DIGITAL_IN" BufferType="BYTE" BufferSize="30" DataType="BOOL" Count="240" Tag="DIAGNOSTIC_DI" Index="0">
+    <Param Name="SHELF ZONE A 1-1-1" Offset="0"/>
+    <Param Name="SHELF ZONE A 1-1-2" Offset="1"/>
+    <Param Name="SHELF ZONE A 1-2-1" Offset="2"/>
+    <Param Name="SHELF ZONE A 1-2-2" Offset="3"/>
+    <Param Name="SHELF ZONE A 1-3-1" Offset="4"/>
+    <Param Name="SHELF ZONE A 1-3-2" Offset="5"/>
+    <Param Name="SHELF ZONE A 2-1-1" Offset="6"/>
+    <Param Name="SHELF ZONE A 2-1-2" Offset="7"/>
+    <Param Name="SHELF ZONE A 2-2-1" Offset="8"/>
+    <Param Name="SHELF ZONE A 2-2-2" Offset="9"/>
+    <Param Name="SHELF ZONE A 2-3-1" Offset="10"/>
+    <Param Name="SHELF ZONE A 2-3-2" Offset="11"/>
+    <Param Name="SHELF ZONE A 3-1-1" Offset="12"/>
+    <Param Name="SHELF ZONE A 3-1-2" Offset="13"/>
+    <Param Name="SHELF ZONE A 3-2-1" Offset="14"/>
+    <Param Name="SHELF ZONE A 3-2-2" Offset="15"/>
+    <Param Name="SHELF ZONE A 3-3-1" Offset="16"/>
+    <Param Name="SHELF ZONE A 3-3-2" Offset="17"/>
+    <Param Name="SHELF ZONE A 4-1-1" Offset="18"/>
+    <Param Name="SHELF ZONE A 4-1-2" Offset="19"/>
+    <Param Name="SHELF ZONE A 4-2-1" Offset="20"/>
+    <Param Name="SHELF ZONE A 4-2-2" Offset="21"/>
+    <Param Name="SHELF ZONE A 4-3-1" Offset="22"/>
+    <Param Name="SHELF ZONE A 4-3-2" Offset="23"/>
+    <Param Name="SHELF ZONE A 5-1-1" Offset="24"/>
+    <Param Name="SHELF ZONE A 5-1-2" Offset="25"/>
+    <Param Name="SHELF ZONE A 5-2-1" Offset="26"/>
+    <Param Name="SHELF ZONE A 5-2-2" Offset="27"/>
+    <Param Name="SHELF ZONE A 5-3-1" Offset="28"/>
+    <Param Name="SHELF ZONE A 5-3-2" Offset="29"/>
 
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI030_SHELF_SENSOR_B_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="30"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI031_SHELF_SENSOR_B_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="31"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI032_SHELF_SENSOR_B_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="32"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI033_SHELF_SENSOR_B_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="33"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI034_SHELF_SENSOR_B_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="34"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI035_SHELF_SENSOR_B_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="35"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI036_SHELF_SENSOR_B_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="36"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI037_SHELF_SENSOR_B_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="37"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI038_SHELF_SENSOR_B_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="38"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI039_SHELF_SENSOR_B_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="39"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI040_SHELF_SENSOR_B_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="40"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI041_SHELF_SENSOR_B_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="41"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI042_SHELF_SENSOR_B_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="42"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI043_SHELF_SENSOR_B_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="43"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI044_SHELF_SENSOR_B_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="44"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI045_SHELF_SENSOR_B_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="45"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI046_SHELF_SENSOR_B_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="46"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI047_SHELF_SENSOR_B_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="47"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI048_SHELF_SENSOR_B_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="48"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI049_SHELF_SENSOR_B_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="49"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI050_SHELF_SENSOR_B_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="50"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI051_SHELF_SENSOR_B_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="51"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI052_SHELF_SENSOR_B_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="52"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI053_SHELF_SENSOR_B_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="53"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI054_SHELF_SENSOR_B_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="54"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI055_SHELF_SENSOR_B_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="55"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI056_SHELF_SENSOR_B_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="56"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI057_SHELF_SENSOR_B_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="57"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI058_SHELF_SENSOR_B_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="58"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI059_SHELF_SENSOR_B_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="59"/>
+    <Param Name="SHELF ZONE B 1-1-1" Offset="30"/>
+    <Param Name="SHELF ZONE B 1-1-2" Offset="31"/>
+    <Param Name="SHELF ZONE B 1-2-1" Offset="32"/>
+    <Param Name="SHELF ZONE B 1-2-2" Offset="33"/>
+    <Param Name="SHELF ZONE B 1-3-1" Offset="34"/>
+    <Param Name="SHELF ZONE B 1-3-2" Offset="35"/>
+    <Param Name="SHELF ZONE B 2-1-1" Offset="36"/>
+    <Param Name="SHELF ZONE B 2-1-2" Offset="37"/>
+    <Param Name="SHELF ZONE B 2-2-1" Offset="38"/>
+    <Param Name="SHELF ZONE B 2-2-2" Offset="39"/>
+    <Param Name="SHELF ZONE B 2-3-1" Offset="40"/>
+    <Param Name="SHELF ZONE B 2-3-2" Offset="41"/>
+    <Param Name="SHELF ZONE B 3-1-1" Offset="42"/>
+    <Param Name="SHELF ZONE B 3-1-2" Offset="43"/>
+    <Param Name="SHELF ZONE B 3-2-1" Offset="44"/>
+    <Param Name="SHELF ZONE B 3-2-2" Offset="45"/>
+    <Param Name="SHELF ZONE B 3-3-1" Offset="46"/>
+    <Param Name="SHELF ZONE B 3-3-2" Offset="47"/>
+    <Param Name="SHELF ZONE B 4-1-1" Offset="48"/>
+    <Param Name="SHELF ZONE B 4-1-2" Offset="49"/>
+    <Param Name="SHELF ZONE B 4-2-1" Offset="50"/>
+    <Param Name="SHELF ZONE B 4-2-2" Offset="51"/>
+    <Param Name="SHELF ZONE B 4-3-1" Offset="52"/>
+    <Param Name="SHELF ZONE B 4-3-2" Offset="53"/>
+    <Param Name="SHELF ZONE B 5-1-1" Offset="54"/>
+    <Param Name="SHELF ZONE B 5-1-2" Offset="55"/>
+    <Param Name="SHELF ZONE B 5-2-1" Offset="56"/>
+    <Param Name="SHELF ZONE B 5-2-2" Offset="57"/>
+    <Param Name="SHELF ZONE B 5-3-1" Offset="58"/>
+    <Param Name="SHELF ZONE B 5-3-2" Offset="59"/>
 
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI060_SHELF_SENSOR_C_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="60"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI061_SHELF_SENSOR_C_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="61"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI062_SHELF_SENSOR_C_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="62"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI063_SHELF_SENSOR_C_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="63"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI064_SHELF_SENSOR_C_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="64"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI065_SHELF_SENSOR_C_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="65"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI066_SHELF_SENSOR_C_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="66"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI067_SHELF_SENSOR_C_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="67"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI068_SHELF_SENSOR_C_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="68"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI069_SHELF_SENSOR_C_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="69"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI070_SHELF_SENSOR_C_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="70"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI071_SHELF_SENSOR_C_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="71"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI072_SHELF_SENSOR_C_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="72"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI073_SHELF_SENSOR_C_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="73"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI074_SHELF_SENSOR_C_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="74"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI075_SHELF_SENSOR_C_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="75"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI076_SHELF_SENSOR_C_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="76"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI077_SHELF_SENSOR_C_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="77"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI078_SHELF_SENSOR_C_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="78"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI079_SHELF_SENSOR_C_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="79"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI080_SHELF_SENSOR_C_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="80"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI081_SHELF_SENSOR_C_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="81"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI082_SHELF_SENSOR_C_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="82"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI083_SHELF_SENSOR_C_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="83"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI084_SHELF_SENSOR_C_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="84"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI085_SHELF_SENSOR_C_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="85"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI086_SHELF_SENSOR_C_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="86"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI087_SHELF_SENSOR_C_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="87"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI088_SHELF_SENSOR_C_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="88"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI089_SHELF_SENSOR_C_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="89"/>
+    <Param Name="SHELF ZONE C 1-1-1" Offset="60"/>
+    <Param Name="SHELF ZONE C 1-1-2" Offset="61"/>
+    <Param Name="SHELF ZONE C 1-2-1" Offset="62"/>
+    <Param Name="SHELF ZONE C 1-2-2" Offset="63"/>
+    <Param Name="SHELF ZONE C 1-3-1" Offset="64"/>
+    <Param Name="SHELF ZONE C 1-3-2" Offset="65"/>
+    <Param Name="SHELF ZONE C 2-1-1" Offset="66"/>
+    <Param Name="SHELF ZONE C 2-1-2" Offset="67"/>
+    <Param Name="SHELF ZONE C 2-2-1" Offset="68"/>
+    <Param Name="SHELF ZONE C 2-2-2" Offset="69"/>
+    <Param Name="SHELF ZONE C 2-3-1" Offset="70"/>
+    <Param Name="SHELF ZONE C 2-3-2" Offset="71"/>
+    <Param Name="SHELF ZONE C 3-1-1" Offset="72"/>
+    <Param Name="SHELF ZONE C 3-1-2" Offset="73"/>
+    <Param Name="SHELF ZONE C 3-2-1" Offset="74"/>
+    <Param Name="SHELF ZONE C 3-2-2" Offset="75"/>
+    <Param Name="SHELF ZONE C 3-3-1" Offset="76"/>
+    <Param Name="SHELF ZONE C 3-3-2" Offset="77"/>
+    <Param Name="SHELF ZONE C 4-1-1" Offset="78"/>
+    <Param Name="SHELF ZONE C 4-1-2" Offset="79"/>
+    <Param Name="SHELF ZONE C 4-2-1" Offset="80"/>
+    <Param Name="SHELF ZONE C 4-2-2" Offset="81"/>
+    <Param Name="SHELF ZONE C 4-3-1" Offset="82"/>
+    <Param Name="SHELF ZONE C 4-3-2" Offset="83"/>
+    <Param Name="SHELF ZONE C 5-1-1" Offset="84"/>
+    <Param Name="SHELF ZONE C 5-1-2" Offset="85"/>
+    <Param Name="SHELF ZONE C 5-2-1" Offset="86"/>
+    <Param Name="SHELF ZONE C 5-2-2" Offset="87"/>
+    <Param Name="SHELF ZONE C 5-3-1" Offset="88"/>
+    <Param Name="SHELF ZONE C 5-3-2" Offset="89"/>
 
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI090_SHELF_SENSOR_D_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="90"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI091_SHELF_SENSOR_D_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="91"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI092_SHELF_SENSOR_D_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="92"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI093_SHELF_SENSOR_D_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="93"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI094_SHELF_SENSOR_D_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="94"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI095_SHELF_SENSOR_D_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="95"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI096_SHELF_SENSOR_D_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="96"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI097_SHELF_SENSOR_D_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="97"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI098_SHELF_SENSOR_D_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="98"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI099_SHELF_SENSOR_D_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="99"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI100_SHELF_SENSOR_D_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="100"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI101_SHELF_SENSOR_D_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="101"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI102_SHELF_SENSOR_D_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="102"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI103_SHELF_SENSOR_D_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="103"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI104_SHELF_SENSOR_D_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="104"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI105_SHELF_SENSOR_D_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="105"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI106_SHELF_SENSOR_D_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="106"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI107_SHELF_SENSOR_D_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="107"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI108_SHELF_SENSOR_D_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="108"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI109_SHELF_SENSOR_D_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="109"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI110_SHELF_SENSOR_D_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="110"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI111_SHELF_SENSOR_D_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="111"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI112_SHELF_SENSOR_D_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="112"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI113_SHELF_SENSOR_D_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="113"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI114_SHELF_SENSOR_D_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="114"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI115_SHELF_SENSOR_D_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="115"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI116_SHELF_SENSOR_D_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="116"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI117_SHELF_SENSOR_D_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="117"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI118_SHELF_SENSOR_D_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="118"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI119_SHELF_SENSOR_D_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="119"/>
+    <Param Name="SHELF ZONE D 1-1-1" Offset="90"/>
+    <Param Name="SHELF ZONE D 1-1-2" Offset="91"/>
+    <Param Name="SHELF ZONE D 1-2-1" Offset="92"/>
+    <Param Name="SHELF ZONE D 1-2-2" Offset="93"/>
+    <Param Name="SHELF ZONE D 1-3-1" Offset="94"/>
+    <Param Name="SHELF ZONE D 1-3-2" Offset="95"/>
+    <Param Name="SHELF ZONE D 2-1-1" Offset="96"/>
+    <Param Name="SHELF ZONE D 2-1-2" Offset="97"/>
+    <Param Name="SHELF ZONE D 2-2-1" Offset="98"/>
+    <Param Name="SHELF ZONE D 2-2-2" Offset="99"/>
+    <Param Name="SHELF ZONE D 2-3-1" Offset="100"/>
+    <Param Name="SHELF ZONE D 2-3-2" Offset="101"/>
+    <Param Name="SHELF ZONE D 3-1-1" Offset="102"/>
+    <Param Name="SHELF ZONE D 3-1-2" Offset="103"/>
+    <Param Name="SHELF ZONE D 3-2-1" Offset="104"/>
+    <Param Name="SHELF ZONE D 3-2-2" Offset="105"/>
+    <Param Name="SHELF ZONE D 3-3-1" Offset="106"/>
+    <Param Name="SHELF ZONE D 3-3-2" Offset="107"/>
+    <Param Name="SHELF ZONE D 4-1-1" Offset="108"/>
+    <Param Name="SHELF ZONE D 4-1-2" Offset="109"/>
+    <Param Name="SHELF ZONE D 4-2-1" Offset="110"/>
+    <Param Name="SHELF ZONE D 4-2-2" Offset="111"/>
+    <Param Name="SHELF ZONE D 4-3-1" Offset="112"/>
+    <Param Name="SHELF ZONE D 4-3-2" Offset="113"/>
+    <Param Name="SHELF ZONE D 5-1-1" Offset="114"/>
+    <Param Name="SHELF ZONE D 5-1-2" Offset="115"/>
+    <Param Name="SHELF ZONE D 5-2-1" Offset="116"/>
+    <Param Name="SHELF ZONE D 5-2-2" Offset="117"/>
+    <Param Name="SHELF ZONE D 5-3-1" Offset="118"/>
+    <Param Name="SHELF ZONE D 5-3-2" Offset="119"/>
+                            
+    <Param Name="SHELF ZONE E 1-1-1" Offset="120"/>
+    <Param Name="SHELF ZONE E 1-1-2" Offset="121"/>
+    <Param Name="SHELF ZONE E 1-2-1" Offset="122"/>
+    <Param Name="SHELF ZONE E 1-2-2" Offset="123"/>
+    <Param Name="SHELF ZONE E 1-3-1" Offset="124"/>
+    <Param Name="SHELF ZONE E 1-3-2" Offset="125"/>
+    <Param Name="SHELF ZONE E 2-1-1" Offset="126"/>
+    <Param Name="SHELF ZONE E 2-1-2" Offset="127"/>
+    <Param Name="SHELF ZONE E 2-2-1" Offset="128"/>
+    <Param Name="SHELF ZONE E 2-2-2" Offset="129"/>
+    <Param Name="SHELF ZONE E 2-3-1" Offset="130"/>
+    <Param Name="SHELF ZONE E 2-3-2" Offset="131"/>
+    <Param Name="SHELF ZONE E 3-1-1" Offset="132"/>
+    <Param Name="SHELF ZONE E 3-1-2" Offset="133"/>
+    <Param Name="SHELF ZONE E 3-2-1" Offset="134"/>
+    <Param Name="SHELF ZONE E 3-2-2" Offset="135"/>
+    <Param Name="SHELF ZONE E 3-3-1" Offset="136"/>
+    <Param Name="SHELF ZONE E 3-3-2" Offset="137"/>
+    <Param Name="SHELF ZONE E 4-1-1" Offset="138"/>
+    <Param Name="SHELF ZONE E 4-1-2" Offset="139"/>
+    <Param Name="SHELF ZONE E 4-2-1" Offset="140"/>
+    <Param Name="SHELF ZONE E 4-2-2" Offset="141"/>
+    <Param Name="SHELF ZONE E 4-3-1" Offset="142"/>
+    <Param Name="SHELF ZONE E 4-3-2" Offset="143"/>
+    <Param Name="SHELF ZONE E 5-1-1" Offset="144"/>
+    <Param Name="SHELF ZONE E 5-1-2" Offset="145"/>
+    <Param Name="SHELF ZONE E 5-2-1" Offset="146"/>
+    <Param Name="SHELF ZONE E 5-2-2" Offset="147"/>
+    <Param Name="SHELF ZONE E 5-3-1" Offset="148"/>
+    <Param Name="SHELF ZONE E 5-3-2" Offset="149"/>
+                            
+    <Param Name="SHELF ZONE F 1-1-1" Offset="150"/>
+    <Param Name="SHELF ZONE F 1-1-2" Offset="151"/>
+    <Param Name="SHELF ZONE F 1-2-1" Offset="152"/>
+    <Param Name="SHELF ZONE F 1-2-2" Offset="153"/>
+    <Param Name="SHELF ZONE F 1-3-1" Offset="154"/>
+    <Param Name="SHELF ZONE F 1-3-2" Offset="155"/>
+    <Param Name="SHELF ZONE F 2-1-1" Offset="156"/>
+    <Param Name="SHELF ZONE F 2-1-2" Offset="157"/>
+    <Param Name="SHELF ZONE F 2-2-1" Offset="158"/>
+    <Param Name="SHELF ZONE F 2-2-2" Offset="159"/>
+    <Param Name="SHELF ZONE F 2-3-1" Offset="160"/>
+    <Param Name="SHELF ZONE F 2-3-2" Offset="161"/>
+    <Param Name="SHELF ZONE F 3-1-1" Offset="162"/>
+    <Param Name="SHELF ZONE F 3-1-2" Offset="163"/>
+    <Param Name="SHELF ZONE F 3-2-1" Offset="164"/>
+    <Param Name="SHELF ZONE F 3-2-2" Offset="165"/>
+    <Param Name="SHELF ZONE F 3-3-1" Offset="166"/>
+    <Param Name="SHELF ZONE F 3-3-2" Offset="167"/>
+    <Param Name="SHELF ZONE F 4-1-1" Offset="168"/>
+    <Param Name="SHELF ZONE F 4-1-2" Offset="169"/>
+    <Param Name="SHELF ZONE F 4-2-1" Offset="170"/>
+    <Param Name="SHELF ZONE F 4-2-2" Offset="171"/>
+    <Param Name="SHELF ZONE F 4-3-1" Offset="172"/>
+    <Param Name="SHELF ZONE F 4-3-2" Offset="173"/>
+    <Param Name="SHELF ZONE F 5-1-1" Offset="174"/>
+    <Param Name="SHELF ZONE F 5-1-2" Offset="175"/>
+    <Param Name="SHELF ZONE F 5-2-1" Offset="176"/>
+    <Param Name="SHELF ZONE F 5-2-2" Offset="177"/>
+    <Param Name="SHELF ZONE F 5-3-1" Offset="178"/>
+    <Param Name="SHELF ZONE F 5-3-2" Offset="179"/>
+                            
+    <Param Name="SHELF ZONE G 1-1-1" Offset="180"/>
+    <Param Name="SHELF ZONE G 1-1-2" Offset="181"/>
+    <Param Name="SHELF ZONE G 1-2-1" Offset="182"/>
+    <Param Name="SHELF ZONE G 1-2-2" Offset="183"/>
+    <Param Name="SHELF ZONE G 1-3-1" Offset="184"/>
+    <Param Name="SHELF ZONE G 1-3-2" Offset="185"/>
+    <Param Name="SHELF ZONE G 2-1-1" Offset="186"/>
+    <Param Name="SHELF ZONE G 2-1-2" Offset="187"/>
+    <Param Name="SHELF ZONE G 2-2-1" Offset="188"/>
+    <Param Name="SHELF ZONE G 2-2-2" Offset="189"/>
+    <Param Name="SHELF ZONE G 2-3-1" Offset="190"/>
+    <Param Name="SHELF ZONE G 2-3-2" Offset="191"/>
+    <Param Name="SHELF ZONE G 3-1-1" Offset="192"/>
+    <Param Name="SHELF ZONE G 3-1-2" Offset="193"/>
+    <Param Name="SHELF ZONE G 3-2-1" Offset="194"/>
+    <Param Name="SHELF ZONE G 3-2-2" Offset="195"/>
+    <Param Name="SHELF ZONE G 3-3-1" Offset="196"/>
+    <Param Name="SHELF ZONE G 3-3-2" Offset="197"/>
+    <Param Name="SHELF ZONE G 4-1-1" Offset="198"/>
+    <Param Name="SHELF ZONE G 4-1-2" Offset="199"/>
+    <Param Name="SHELF ZONE G 4-2-1" Offset="200"/>
+    <Param Name="SHELF ZONE G 4-2-2" Offset="201"/>
+    <Param Name="SHELF ZONE G 4-3-1" Offset="202"/>
+    <Param Name="SHELF ZONE G 4-3-2" Offset="203"/>
+    <Param Name="SHELF ZONE G 5-1-1" Offset="204"/>
+    <Param Name="SHELF ZONE G 5-1-2" Offset="205"/>
+    <Param Name="SHELF ZONE G 5-2-1" Offset="206"/>
+    <Param Name="SHELF ZONE G 5-2-2" Offset="207"/>
+    <Param Name="SHELF ZONE G 5-3-1" Offset="208"/>
+    <Param Name="SHELF ZONE G 5-3-2" Offset="209"/>
+                            
+    <Param Name="SHELF ZONE H 1-1-1" Offset="210"/>
+    <Param Name="SHELF ZONE H 1-1-2" Offset="211"/>
+    <Param Name="SHELF ZONE H 1-2-1" Offset="212"/>
+    <Param Name="SHELF ZONE H 1-2-2" Offset="213"/>
+    <Param Name="SHELF ZONE H 1-3-1" Offset="214"/>
+    <Param Name="SHELF ZONE H 1-3-2" Offset="215"/>
+    <Param Name="SHELF ZONE H 2-1-1" Offset="216"/>
+    <Param Name="SHELF ZONE H 2-1-2" Offset="217"/>
+    <Param Name="SHELF ZONE H 2-2-1" Offset="218"/>
+    <Param Name="SHELF ZONE H 2-2-2" Offset="219"/>
+    <Param Name="SHELF ZONE H 2-3-1" Offset="220"/>
+    <Param Name="SHELF ZONE H 2-3-2" Offset="221"/>
+    <Param Name="SHELF ZONE H 3-1-1" Offset="222"/>
+    <Param Name="SHELF ZONE H 3-1-2" Offset="223"/>
+    <Param Name="SHELF ZONE H 3-2-1" Offset="224"/>
+    <Param Name="SHELF ZONE H 3-2-2" Offset="225"/>
+    <Param Name="SHELF ZONE H 3-3-1" Offset="226"/>
+    <Param Name="SHELF ZONE H 3-3-2" Offset="227"/>
+    <Param Name="SHELF ZONE H 4-1-1" Offset="228"/>
+    <Param Name="SHELF ZONE H 4-1-2" Offset="229"/>
+    <Param Name="SHELF ZONE H 4-2-1" Offset="230"/>
+    <Param Name="SHELF ZONE H 4-2-2" Offset="231"/>
+    <Param Name="SHELF ZONE H 4-3-1" Offset="232"/>
+    <Param Name="SHELF ZONE H 4-3-2" Offset="233"/>
+    <Param Name="SHELF ZONE H 5-1-1" Offset="234"/>
+    <Param Name="SHELF ZONE H 5-1-2" Offset="235"/>
+    <Param Name="SHELF ZONE H 5-2-1" Offset="236"/>
+    <Param Name="SHELF ZONE H 5-2-2" Offset="237"/>
+    <Param Name="SHELF ZONE H 5-3-1" Offset="238"/>
+    <Param Name="SHELF ZONE H 5-3-2" Offset="239"/>
+  </PlcVar>
 
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI120_SHELF_SENSOR_E_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="120"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI121_SHELF_SENSOR_E_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="121"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI122_SHELF_SENSOR_E_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="122"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI123_SHELF_SENSOR_E_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="123"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI124_SHELF_SENSOR_E_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="124"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI125_SHELF_SENSOR_E_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="125"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI126_SHELF_SENSOR_E_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="126"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI127_SHELF_SENSOR_E_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="127"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI128_SHELF_SENSOR_E_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="128"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI129_SHELF_SENSOR_E_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="129"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI130_SHELF_SENSOR_E_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="130"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI131_SHELF_SENSOR_E_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="131"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI132_SHELF_SENSOR_E_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="132"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI133_SHELF_SENSOR_E_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="133"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI134_SHELF_SENSOR_E_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="134"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI135_SHELF_SENSOR_E_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="135"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI136_SHELF_SENSOR_E_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="136"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI137_SHELF_SENSOR_E_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="137"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI138_SHELF_SENSOR_E_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="138"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI139_SHELF_SENSOR_E_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="139"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI140_SHELF_SENSOR_E_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="140"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI141_SHELF_SENSOR_E_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="141"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI142_SHELF_SENSOR_E_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="142"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI143_SHELF_SENSOR_E_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="143"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI144_SHELF_SENSOR_E_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="144"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI145_SHELF_SENSOR_E_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="145"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI146_SHELF_SENSOR_E_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="146"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI147_SHELF_SENSOR_E_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="147"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI148_SHELF_SENSOR_E_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="148"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI149_SHELF_SENSOR_E_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="149"/>
-
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI150_SHELF_SENSOR_F_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="150"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI151_SHELF_SENSOR_F_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="151"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI152_SHELF_SENSOR_F_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="152"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI153_SHELF_SENSOR_F_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="153"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI154_SHELF_SENSOR_F_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="154"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI155_SHELF_SENSOR_F_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="155"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI156_SHELF_SENSOR_F_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="156"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI157_SHELF_SENSOR_F_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="157"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI158_SHELF_SENSOR_F_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="158"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI159_SHELF_SENSOR_F_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="159"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI160_SHELF_SENSOR_F_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="160"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI161_SHELF_SENSOR_F_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="161"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI162_SHELF_SENSOR_F_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="162"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI163_SHELF_SENSOR_F_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="163"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI164_SHELF_SENSOR_F_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="164"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI165_SHELF_SENSOR_F_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="165"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI166_SHELF_SENSOR_F_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="166"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI167_SHELF_SENSOR_F_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="167"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI168_SHELF_SENSOR_F_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="168"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI169_SHELF_SENSOR_F_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="169"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI170_SHELF_SENSOR_F_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="170"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI171_SHELF_SENSOR_F_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="171"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI172_SHELF_SENSOR_F_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="172"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI173_SHELF_SENSOR_F_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="173"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI174_SHELF_SENSOR_F_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="174"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI175_SHELF_SENSOR_F_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="175"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI176_SHELF_SENSOR_F_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="176"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI177_SHELF_SENSOR_F_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="177"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI178_SHELF_SENSOR_F_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="178"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI179_SHELF_SENSOR_F_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="179"/>
-
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI180_SHELF_SENSOR_G_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="180"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI181_SHELF_SENSOR_G_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="181"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI182_SHELF_SENSOR_G_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="182"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI183_SHELF_SENSOR_G_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="183"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI184_SHELF_SENSOR_G_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="184"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI185_SHELF_SENSOR_G_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="185"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI186_SHELF_SENSOR_G_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="186"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI187_SHELF_SENSOR_G_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="187"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI188_SHELF_SENSOR_G_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="188"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI189_SHELF_SENSOR_G_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="189"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI190_SHELF_SENSOR_G_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="190"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI191_SHELF_SENSOR_G_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="191"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI192_SHELF_SENSOR_G_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="192"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI193_SHELF_SENSOR_G_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="193"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI194_SHELF_SENSOR_G_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="194"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI195_SHELF_SENSOR_G_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="195"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI196_SHELF_SENSOR_G_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="196"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI197_SHELF_SENSOR_G_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="197"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI198_SHELF_SENSOR_G_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="198"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI199_SHELF_SENSOR_G_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="199"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI200_SHELF_SENSOR_G_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="200"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI201_SHELF_SENSOR_G_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="201"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI202_SHELF_SENSOR_G_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="202"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI203_SHELF_SENSOR_G_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="203"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI204_SHELF_SENSOR_G_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="204"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI205_SHELF_SENSOR_G_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="205"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI206_SHELF_SENSOR_G_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="206"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI207_SHELF_SENSOR_G_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="207"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI208_SHELF_SENSOR_G_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="208"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI209_SHELF_SENSOR_G_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="209"/>
-
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI210_SHELF_SENSOR_H_1_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="210"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI211_SHELF_SENSOR_H_1_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="211"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI212_SHELF_SENSOR_H_1_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="212"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI213_SHELF_SENSOR_H_1_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="213"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI214_SHELF_SENSOR_H_1_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="214"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI215_SHELF_SENSOR_H_1_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="215"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI216_SHELF_SENSOR_H_2_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="216"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI217_SHELF_SENSOR_H_2_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="217"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI218_SHELF_SENSOR_H_2_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="218"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI219_SHELF_SENSOR_H_2_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="219"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI220_SHELF_SENSOR_H_2_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="220"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI221_SHELF_SENSOR_H_2_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="221"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI222_SHELF_SENSOR_H_3_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="222"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI223_SHELF_SENSOR_H_3_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="223"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI224_SHELF_SENSOR_H_3_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="224"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI225_SHELF_SENSOR_H_3_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="225"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI226_SHELF_SENSOR_H_3_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="226"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI227_SHELF_SENSOR_H_3_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="227"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI228_SHELF_SENSOR_H_4_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="228"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI229_SHELF_SENSOR_H_4_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="229"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI230_SHELF_SENSOR_H_4_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="230"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI231_SHELF_SENSOR_H_4_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="231"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI232_SHELF_SENSOR_H_4_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="232"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI233_SHELF_SENSOR_H_4_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="233"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI234_SHELF_SENSOR_H_5_1_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="234"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI235_SHELF_SENSOR_H_5_1_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="235"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI236_SHELF_SENSOR_H_5_2_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="236"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI237_SHELF_SENSOR_H_5_2_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="237"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI238_SHELF_SENSOR_H_5_3_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="238"/>
-  <PlcVar Name="GV_PIO.GV_DIGITAL_IN.DI239_SHELF_SENSOR_H_5_3_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="239"/>
-
-  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[1]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="240"/>
-  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[2]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="241"/>
-  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[3]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="242"/>
-  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[4]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="243"/>
-  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[5]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="244"/>
-  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[1]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="245"/>
-  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[2]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="246"/>
-  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[3]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="247"/>
-  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[4]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="248"/>
-  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[5]" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="249"/>
+  <PlcVar Name="GV_PIO.GV_DIGITAL_OUT" BufferType="BYTE" BufferSize="1" DataType="BOOL" Count="1" Tag="DIAGNOSTIC_DO" Index="1">
+    <Param Name="Y260_WATER_TANK_INLET_SOL" Offset="0"/>
+    <Param Name="Y261_WATER_TANK_OUTLET_SOL" Offset="1"/>
+    <Param Name="Y262_RESERVE" Offset="2"/>
+  </PlcVar>
+  <!--
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[2]" Caption="DO_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="241"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[3]" Caption="DO_3" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="242"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[4]" Caption="DO_4" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="243"/>
+  <PlcVar Name="IO_DigiOut_GVL.Digital_Output[5]" Caption="DO_5" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DO" Index="244"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[1]" Caption="DI_1" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="245"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[2]" Caption="DI_2" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="246"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[3]" Caption="DI_3" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="247"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[4]" Caption="DI_4" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="248"/>
+  <PlcVar Name="IO_DigiIn_GVL.Digital_Input[5]" Caption="DI_5" Type="BOOL" Size="1" Count="1" Tag="DIAGNOSTIC_DI" Index="249"/>
   <AxsVar Count="ServoMotion_Parameters.MAX_AXES" PlcToHmi="ServoMotion_GVL.PlcToHmi" P2HSize="56" HmiToPlc="ServoMotion_GVL.HmiToPlc" H2PSize="64"/>
+  -->
 </Plc>
