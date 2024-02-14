@@ -18,15 +18,15 @@ namespace LARVA_UI.ViewModels
     [GenerateViewModel]
     public partial class CurrentAlarmViewModel
     {
-        public DelegateCommand<RoutedEventArgs> AlarmResetTouchDownCommand;
-        public DelegateCommand<RoutedEventArgs> AlarmResetTouchUpCommand;
-        public DelegateCommand<RoutedEventArgs> AlarmResetButtonDownCommand;
-        public DelegateCommand<RoutedEventArgs> AlarmResetButtonUpCommand;
+        //public DelegateCommand<RoutedEventArgs> AlarmResetTouchDownCommand;
+        //public DelegateCommand<RoutedEventArgs> AlarmResetTouchUpCommand;
+        //public DelegateCommand<RoutedEventArgs> AlarmResetButtonDownCommand;
+        //public DelegateCommand<RoutedEventArgs> AlarmResetButtonUpCommand;
 
-        public DelegateCommand<RoutedEventArgs> BuzzerOffTouchDownCommand;
-        public DelegateCommand<RoutedEventArgs> BuzzerOffTouchUpCommand;
-        public DelegateCommand<RoutedEventArgs> BuzzerOffButtonDownCommand;
-        public DelegateCommand<RoutedEventArgs> BuzzerOffButtonUpCommand;
+        //public DelegateCommand<RoutedEventArgs> BuzzerOffTouchDownCommand;
+        //public DelegateCommand<RoutedEventArgs> BuzzerOffTouchUpCommand;
+        //public DelegateCommand<RoutedEventArgs> BuzzerOffButtonDownCommand;
+        //public DelegateCommand<RoutedEventArgs> BuzzerOffButtonUpCommand;
 
         private ObservableCollection<CurrentAlarmDisplay> _CurrentAlarmList;
         public CurrentAlarmViewModel()
@@ -67,35 +67,39 @@ namespace LARVA_UI.ViewModels
 
         private void Initialize()
         {
-            AlarmResetTouchDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonDownCommand);
-            AlarmResetTouchUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonUpCommand);
-            AlarmResetButtonDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonDownCommand);
-            AlarmResetButtonUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonUpCommand);
-            BuzzerOffTouchDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonDownCommand);
-            BuzzerOffTouchUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonUpCommand);
-            BuzzerOffButtonDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonDownCommand);
-            BuzzerOffButtonUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonUpCommand);
+            //AlarmResetTouchDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonDownCommand);
+            //AlarmResetTouchUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonUpCommand);
+            //AlarmResetButtonDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonDownCommand);
+            //AlarmResetButtonUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteAlarmResetButtonUpCommand);
+            //BuzzerOffTouchDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonDownCommand);
+            //BuzzerOffTouchUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonUpCommand);
+            //BuzzerOffButtonDownCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonDownCommand);
+            //BuzzerOffButtonUpCommand = new DelegateCommand<RoutedEventArgs>(ExecuteBuzzerOffButtonUpCommand);
             _CurrentAlarmList = new ObservableCollection<CurrentAlarmDisplay>();
 
             UpdateCurrentAlarmDisplay();
         }
 
-        private void ExecuteAlarmResetButtonUpCommand(RoutedEventArgs args)
+        [GenerateCommand]
+        private void AlarmResetButtonUp(RoutedEventArgs args)
         {
             DataManager.Instance.SET_BOOL_DATA(IoNameHelper.oEqp_nAlarm_Reset, false);
         }
 
-        private void ExecuteAlarmResetButtonDownCommand(RoutedEventArgs args)
+        [GenerateCommand]
+        private void AlarmResetButtonDown(RoutedEventArgs args)
         {
             DataManager.Instance.SET_BOOL_DATA(IoNameHelper.oEqp_nAlarm_Reset, true);
         }
 
-        private void ExecuteBuzzerOffButtonUpCommand(RoutedEventArgs args)
+        [GenerateCommand]
+        private void BuzzerOffButtonUp(RoutedEventArgs args)
         {
             DataManager.Instance.SET_BOOL_DATA(IoNameHelper.oEqp_nBuzzer_Off, false);
         }
 
-        private void ExecuteBuzzerOffButtonDownCommand(RoutedEventArgs args)
+        [GenerateCommand]
+        private void BuzzerOffButtonDown(RoutedEventArgs args)
         {
             DataManager.Instance.SET_BOOL_DATA(IoNameHelper.oEqp_nBuzzer_Off, true);
         }

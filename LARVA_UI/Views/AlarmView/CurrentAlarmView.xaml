@@ -28,16 +28,16 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <dxc:SimpleButton Content="Buzzer Off" Margin="0,5,5,5" Width="100">
                 <dxmvvm:Interaction.Triggers>
-                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding BuzzerOffTouchDownCommand}" PassEventArgsToCommand="True"/>
-                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding BuzzerOffTouchUpCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding BuzzerOffButtonDownCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding BuzzerOffButtonUpCommand}" PassEventArgsToCommand="True"/>
                     <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonDown" Command="{Binding BuzzerOffButtonDownCommand}" PassEventArgsToCommand="True"/>
                     <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonUp" Command="{Binding BuzzerOffButtonUpCommand}" PassEventArgsToCommand="True"/>
                 </dxmvvm:Interaction.Triggers>
             </dxc:SimpleButton>
             <dxc:SimpleButton Content="Reset" Margin="5,5,5,5" Width="100">
                 <dxmvvm:Interaction.Triggers>
-                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding AlarmResetTouchDownCommand}" PassEventArgsToCommand="True"/>
-                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding AlarmResetTouchUpCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchDown" Command="{Binding AlarmResetButtonDownCommand}" PassEventArgsToCommand="True"/>
+                    <dxmvvm:EventToCommand EventName="PreviewTouchUp" Command="{Binding AlarmResetButtonUpCommand}" PassEventArgsToCommand="True"/>
                     <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonDown" Command="{Binding AlarmResetButtonDownCommand}" PassEventArgsToCommand="True"/>
                     <dxmvvm:EventToCommand EventName="PreviewMouseLeftButtonUp" Command="{Binding AlarmResetButtonUpCommand}" PassEventArgsToCommand="True"/>                    
                 </dxmvvm:Interaction.Triggers>
