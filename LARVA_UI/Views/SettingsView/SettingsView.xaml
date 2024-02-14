@@ -62,7 +62,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <uc:MotionControl x:Name="ucAxisX" Grid.Column="0" HorizontalAlignment="Center" ServoAxisName="X-Axis" TargetPosition="{Binding TargetPosition_XAxis}" ActualPosition="{Binding ActPosition_XAxis}" ActualVelocity="{Binding ActVelocity_XAxis}" SetPosition="{Binding SetPosition_XAxis}" SetVelocity="{Binding Path=SetVelocity_XAxis}" ServoState="{Binding  ServoState_XAxis}" ServoReady="{Binding ServoReady_XAxis}" ServoNotMoving="{Binding ServoNotMoving_XAxis}">
+                        <uc:MotionControl x:Name="ucAxisX" Grid.Column="0" HorizontalAlignment="Center" ServoAxisName="X-Axis" TargetPosition="{Binding TargetPosition_XAxis}" ActualPosition="{Binding ActPosition_XAxis}" ActualVelocity="{Binding ActVelocity_XAxis}" SetPosition="{Binding SetPosition_XAxis}" SetVelocity="{Binding Path=SetVelocity_XAxis}" ServoState="{Binding ServoState_XAxis}" ServoReady="{Binding ServoReady_XAxis}" ServoNotMoving="{Binding ServoNotMoving_XAxis}">
                             <dxmvvm:Interaction.Triggers>
                                 <dxmvvm:EventToCommand EventName="TargetPositionValueChanged" Command="{Binding XAxisTargetPositionValueChangedCommand}" PassEventArgsToCommand="True"/>
                                 <dxmvvm:EventToCommand EventName="TargetVelocityValueChanged" Command="{Binding XAxisTargetVelocityValueChangedCommand}" PassEventArgsToCommand="True"/>
@@ -94,7 +94,7 @@
                             </dxmvvm:Interaction.Triggers>
                         </uc:MotionControl>
 
-                        <uc:MotionControl x:Name="ucAxisY" Grid.Column="1" HorizontalAlignment="Center" ServoAxisName="Y-Axis" SetPosition="{Binding Path=SetPosition_YAxis}" SetVelocity="{Binding Path=SetVelocity_YAxis}" ActualPosition="{Binding ActPosition_YAxis}" ActualVelocity="{Binding ActVelocity_YAxis}">
+                        <uc:MotionControl x:Name="ucAxisY" Grid.Column="1" HorizontalAlignment="Center" ServoAxisName="Y-Axis" TargetPosition="{Binding TargetPosition_YAxis}" ActualPosition="{Binding ActPosition_YAxis}" ActualVelocity="{Binding ActVelocity_YAxis}" SetPosition="{Binding SetPosition_YAxis}" SetVelocity="{Binding Path=SetVelocity_YAxis}" ServoState="{Binding ServoState_YAxis}" ServoReady="{Binding ServoReady_YAxis}" ServoNotMoving="{Binding ServoNotMoving_YAxis}">
                             <dxmvvm:Interaction.Triggers>
                                 <dxmvvm:EventToCommand EventName="TargetPositionValueChanged" Command="{Binding YAxisTargetPositionValueChangedCommand}" PassEventArgsToCommand="True"/>
                                 <dxmvvm:EventToCommand EventName="ServoEnableClicked" Command="{Binding YAxisServoEnableCommand}" PassEventArgsToCommand="False"/>
@@ -125,7 +125,7 @@
                             </dxmvvm:Interaction.Triggers>
                         </uc:MotionControl>
 
-                        <uc:MotionControl x:Name="ucAxisZ" Grid.Column="2" HorizontalAlignment="Center" ServoAxisName="Z-Axis" SetPosition="{Binding Path=SetPosition_ZAxis}" SetVelocity="{Binding Path=SetVelocity_ZAxis}" ActualPosition="{Binding ActPosition_ZAxis}" ActualVelocity="{Binding ActVelocity_ZAxis}">
+                        <uc:MotionControl x:Name="ucAxisZ" Grid.Column="2" HorizontalAlignment="Center" ServoAxisName="Z-Axis" TargetPosition="{Binding TargetPosition_ZAxis}" ActualPosition="{Binding ActPosition_ZAxis}" ActualVelocity="{Binding ActVelocity_ZAxis}" SetPosition="{Binding SetPosition_ZAxis}" SetVelocity="{Binding Path=SetVelocity_ZAxis}" ServoState="{Binding ServoState_ZAxis}" ServoReady="{Binding ServoReady_ZAxis}" ServoNotMoving="{Binding ServoNotMoving_ZAxis}">
                             <dxmvvm:Interaction.Triggers>
                                 <dxmvvm:EventToCommand EventName="TargetPositionValueChanged" Command="{Binding ZAxisTargetPositionValueChangedCommand}" PassEventArgsToCommand="True"/>
                                 <dxmvvm:EventToCommand EventName="ServoEnableClicked" Command="{Binding ZAxisServoEnableCommand}" PassEventArgsToCommand="False"/>
@@ -156,7 +156,7 @@
                             </dxmvvm:Interaction.Triggers>
                         </uc:MotionControl>
 
-                        <uc:MotionControl x:Name="ucAxisT" Grid.Column="3" HorizontalAlignment="Center" ServoAxisName="T-Axis" SetPosition="{Binding Path=SetPosition_TAxis}" SetVelocity="{Binding Path=SetVelocity_TAxis}" ActualPosition="{Binding ActPosition_TAxis}" ActualVelocity="{Binding ActVelocity_TAxis}">
+                        <uc:MotionControl x:Name="ucAxisT" Grid.Column="3" HorizontalAlignment="Center" ServoAxisName="T-Axis" TargetPosition="{Binding TargetPosition_TAxis}" ActualPosition="{Binding ActPosition_TAxis}" ActualVelocity="{Binding ActVelocity_TAxis}" SetPosition="{Binding SetPosition_TAxis}" SetVelocity="{Binding Path=SetVelocity_TAxis}" ServoState="{Binding ServoState_TAxis}" ServoReady="{Binding ServoReady_TAxis}" ServoNotMoving="{Binding ServoNotMoving_TAxis}">
                             <dxmvvm:Interaction.Triggers>
                                 <dxmvvm:EventToCommand EventName="TargetPositionValueChanged" Command="{Binding TAxisTargetPositionValueChanged}" PassEventArgsToCommand="True"/>
                                 <dxmvvm:EventToCommand EventName="ServoEnableClicked" Command="{Binding TAxisServoEnableCommand}" PassEventArgsToCommand="False"/>

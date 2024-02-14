@@ -247,9 +247,33 @@ namespace LARVA_UI.ViewModels
             {
                 ServoReady_XAxis = ServoReady(1);
             }
+            else if (data.Name.Equals(IoNameHelper.iYAxis_nStatus_IsReady))
+            {
+                ServoReady_YAxis = ServoReady(2);
+            }
+            else if (data.Name.Equals(IoNameHelper.iZAxis_nStatus_IsReady))
+            {
+                ServoReady_ZAxis = ServoReady(3);
+            }
+            else if (data.Name.Equals(IoNameHelper.iTAxis_nStatus_IsReady))
+            {
+                ServoReady_TAxis = ServoReady(4);
+            }
             else if (data.Name.Equals(IoNameHelper.iXAxis_nStatus_IsNotMove))
             {
                 servoNotMoving_XAxis = ServoNotMoving(1);
+            }
+            else if (data.Name.Equals(IoNameHelper.iYAxis_nStatus_IsNotMove))
+            {
+                servoNotMoving_YAxis = ServoNotMoving(2);
+            }
+            else if (data.Name.Equals(IoNameHelper.iZAxis_nStatus_IsNotMove))
+            {
+                servoNotMoving_ZAxis = ServoNotMoving(3);
+            }
+            else if (data.Name.Equals(IoNameHelper.iTAxis_nStatus_IsNotMove))
+            {
+                servoNotMoving_TAxis = ServoNotMoving(4);
             }
         }
 
@@ -263,6 +287,18 @@ namespace LARVA_UI.ViewModels
             ServoState_XAxis = ServoStateConverter(1);
             ServoReady_XAxis = ServoReady(1);
             ServoNotMoving_XAxis = ServoNotMoving(1);
+
+            ServoState_YAxis = ServoStateConverter(2);
+            ServoReady_YAxis = ServoReady(2);
+            ServoNotMoving_YAxis = ServoNotMoving(2);
+
+            ServoState_ZAxis = ServoStateConverter(3);
+            ServoReady_ZAxis = ServoReady(3);
+            ServoNotMoving_ZAxis = ServoNotMoving(3);
+
+            ServoState_TAxis = ServoStateConverter(4);
+            ServoReady_TAxis = ServoReady(4);
+            ServoNotMoving_TAxis = ServoNotMoving(4);
 
             double setPosX = DataManager.Instance.GET_DOUBLE_DATA(IoNameHelper.iXAxis_dSet_Pos, out result);
 

@@ -41,13 +41,10 @@ namespace LARVA_UI.UserControls
 
         public static readonly DependencyProperty ServoAxisNameProperty = DependencyProperty.Register("ServoAxisName", typeof(string), typeof(MotionControl), new PropertyMetadata(string.Empty));
         public static readonly DependencyProperty ServoStateProperty = DependencyProperty.Register("ServoState", typeof(string), typeof(MotionControl), new PropertyMetadata(new PropertyChangedCallback(ServoStatePropertyChanged)));
-
-        public static readonly DependencyProperty SetPositionProperty = DependencyProperty.Register("SetPosition", typeof(double), typeof(MotionControl), new PropertyMetadata(new PropertyChangedCallback(SetPositionPropertyChanged)));
         public static readonly DependencyProperty ServoReadyProperty = DependencyProperty.Register("ServoReady", typeof(string), typeof(MotionControl), new PropertyMetadata(new PropertyChangedCallback(ServoReadyPropertyChanged)));
-
         public static readonly DependencyProperty ServoNotMovingProperty = DependencyProperty.Register("ServoNotMoving", typeof(string), typeof(MotionControl), new PropertyMetadata(new PropertyChangedCallback(ServoNotMovingPropertyChanged)));
-
-
+        
+        public static readonly DependencyProperty SetPositionProperty = DependencyProperty.Register("SetPosition", typeof(double), typeof(MotionControl), new PropertyMetadata(new PropertyChangedCallback(SetPositionPropertyChanged)));
         public static readonly DependencyProperty SetVelocityProperty = DependencyProperty.Register("SetVelocity", typeof(double), typeof(MotionControl), new PropertyMetadata(0.0));
         public static readonly DependencyProperty ActualPositionProperty = DependencyProperty.Register("ActualPosition", typeof(double), typeof(MotionControl), new PropertyMetadata(0.0));
         public static readonly DependencyProperty ActualVelocityProperty = DependencyProperty.Register("ActualVelocity", typeof(double), typeof(MotionControl), new PropertyMetadata(0.0));
@@ -220,9 +217,15 @@ namespace LARVA_UI.UserControls
         private void ServoHome_Click(object sender, RoutedEventArgs e)
         {
             ServoHomeClicked?.Invoke(sender, e);
+            Window popupWindow = new Window
+            { Title = "ServoHomeWindow", Width = 600, Height = 300, WindowStartupLocation = WindowStartupLocation.CenterScreen, ResizeMode = ResizeMode.NoResize,
+              Content = new TextBlock { Text = "Servo Hommig 중입니다.", HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center, FontSize = 40}
+            };
+
+            popupWindow.ShowDialog();
         }
 
-        
+
         private void TargetPosition_Click(object sender, RoutedEventArgs e)
         {
             TextEdit textEdit = sender as TextEdit;

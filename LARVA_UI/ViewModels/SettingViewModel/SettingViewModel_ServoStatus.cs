@@ -31,6 +31,12 @@ namespace LARVA_UI.ViewModels
         private string servoReady_TAxis;
         [GenerateProperty]
         private string servoNotMoving_XAxis;
+        [GenerateProperty]
+        private string servoNotMoving_YAxis;
+        [GenerateProperty]
+        private string servoNotMoving_ZAxis;
+        [GenerateProperty]
+        private string servoNotMoving_TAxis;
 
         private string ServoNotMoving(int axis)
         {
@@ -43,6 +49,36 @@ namespace LARVA_UI.ViewModels
                 case 1:
                     {
                         bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iXAxis_nStatus_IsNotMove, out result);
+                        if (result)
+                            isNotMoving = val ? "1" : "0";
+                        else
+                            isNotMoving = "0";
+                    }
+                    break;
+
+                case 2:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iYAxis_nStatus_IsNotMove, out result);
+                        if (result)
+                            isNotMoving = val ? "1" : "0";
+                        else
+                            isNotMoving = "0";
+                    }
+                    break;
+
+                case 3:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iZAxis_nStatus_IsNotMove, out result);
+                        if (result)
+                            isNotMoving = val ? "1" : "0";
+                        else
+                            isNotMoving = "0";
+                    }
+                    break;
+
+                case 4:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iTAxis_nStatus_IsNotMove, out result);
                         if (result)
                             isNotMoving = val ? "1" : "0";
                         else
@@ -64,6 +100,36 @@ namespace LARVA_UI.ViewModels
                 case 1:
                     {
                         bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iXAxis_nStatus_IsReady, out result);
+                        if (result)
+                            isReady = val ? "1" : "0";
+                        else
+                            isReady = "0";
+                    }
+                    break;
+
+                case 2:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iYAxis_nStatus_IsReady, out result);
+                        if (result)
+                            isReady = val ? "1" : "0";
+                        else
+                            isReady = "0";
+                    }
+                    break;
+
+                case 3:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iZAxis_nStatus_IsReady, out result);
+                        if (result)
+                            isReady = val ? "1" : "0";
+                        else
+                            isReady = "0";
+                    }
+                    break;
+
+                case 4:
+                    {
+                        bool val = DataManager.Instance.GET_BOOL_DATA(IoNameHelper.iTAxis_nStatus_IsReady, out result);
                         if (result)
                             isReady = val ? "1" : "0";
                         else
